@@ -35,6 +35,12 @@ jobs:
         - name: Install dependencies
           run: npm install
 
+        - name: Format code base
+          run: npm run format
+
+        - name: Lint Code base
+          run: npm run lint
+
         - name: Build
           run: npm run build
 
